@@ -1,3 +1,22 @@
+.no-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #e53935;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1.1em;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #b71c1c;
+  transform: scale(1.15);
+}
 * {
   box-sizing: border-box;
   margin: 0;
