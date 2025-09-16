@@ -142,3 +142,56 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+/* Participants pizzazz styles */
+.pizzazz-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  background: #f1f8e9;
+  border-radius: 20px;
+  padding: 5px 12px 5px 5px;
+  box-shadow: 0 1px 3px rgba(60, 80, 120, 0.06);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.participant-item:hover {
+  background: #e3f2fd;
+  box-shadow: 0 2px 8px rgba(60, 80, 120, 0.12);
+}
+
+.participant-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #42a5f5 60%, #ab47bc 100%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-right: 8px;
+  box-shadow: 0 1px 2px rgba(60, 80, 120, 0.10);
+  border: 2px solid #fff;
+}
+
+.participant-email {
+  font-size: 0.97em;
+  color: #333;
+  word-break: break-all;
+}
+
+.no-participants {
+  color: #aaa;
+  font-style: italic;
+  margin-left: 5px;
+}

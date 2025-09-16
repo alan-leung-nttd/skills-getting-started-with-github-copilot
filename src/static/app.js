@@ -26,8 +26,15 @@ document.addEventListener("DOMContentLoaded", () => {
           participantsHTML = `
             <div class="participants-section">
               <strong>Participants:</strong>
-              <ul class="participants-list">
-                ${details.participants.map(p => `<li>${p}</li>`).join('')}
+              <ul class="pizzazz-list">
+                ${details.participants.map(p => `
+                  <li class="participant-item">
+                    <span class="participant-avatar" title="${p}">
+                      ${p.charAt(0).toUpperCase()}
+                    </span>
+                    <span class="participant-email">${p}</span>
+                  </li>
+                `).join('')}
               </ul>
             </div>
           `;
